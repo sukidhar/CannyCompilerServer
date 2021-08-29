@@ -1,0 +1,15 @@
+{
+  "name": "canny_compiler_server",
+  "version": "1.0.0",
+  "description": "A compiler api to store the user logs and code versions they tried",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "rethinkdb": "^2.4.2"
+  }
+}
