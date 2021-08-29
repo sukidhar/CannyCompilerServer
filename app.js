@@ -1,4 +1,5 @@
 const express = require("express");
+const rethinkDB = require("./rethinkDB")();
 const app = express();
 const port = 3000;
 
