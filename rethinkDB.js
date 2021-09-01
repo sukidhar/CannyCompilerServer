@@ -17,6 +17,20 @@ module.exports = () => {
     }
   );
   return {
-    addUser: async (email, password) => {},
+    insertUser: async (id, name, email) => {
+      r.table("Users")
+        .insert(
+          {
+            id: id,
+            name: name,
+            email: email,
+          },
+          { conflict: "update" }
+        )
+        .run(connection)
+        .then((res) => {
+          console.log(res);
+        });
+    },
   };
 };
