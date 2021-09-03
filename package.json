@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compile-run": "^2.3.4",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "google-auth-library": "^7.8.0",
-    "rethinkdb": "^2.4.2"
+    "rethinkdb": "^2.4.2",
+    "uuid": "^8.3.2"
   }
 }

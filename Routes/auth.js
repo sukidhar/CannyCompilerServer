@@ -1,7 +1,6 @@
-const rethinkDB = require("../rethinkDB")();
 const googleAuth = require("../googleAuthVerification");
 
-module.exports = (app) => {
+module.exports = (app, rethinkDB) => {
   app.put("/auth", async (req, res) => {
     if (req.body.id) {
       googleAuth
